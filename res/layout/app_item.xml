@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip" >
+    <ImageView android:id="@+id/iv_icon"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="2dip"/>
+    
+    <TextView android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:textSize="12dip"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_alignTop="@id/iv_icon"/>
+    
+    <TextView android:id="@+id/tv_pkgname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:textSize="12dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@+id/tv_appname"/>
+    
+    <TextView android:id="@+id/tv_v_code"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@+id/tv_pkgname"/>
+
+     <TextView android:id="@+id/tv_v_name"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/tv_v_code"
+        android:layout_below="@+id/tv_pkgname"/>
+</RelativeLayout>
