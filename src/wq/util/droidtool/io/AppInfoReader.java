@@ -22,6 +22,7 @@ public class AppInfoReader {
 		List<AppInfo> infolist = new ArrayList<AppInfo>();
 		List<PackageInfo> applist = context.getPackageManager().getInstalledPackages(0);
 		for(PackageInfo pinfo: applist){
+			//这个是系统的api
 			ApplicationInfo ainfo = pinfo.applicationInfo;
 			AppInfo appinfo = new AppInfo();
 			appinfo.appName =  ainfo.loadLabel(context.getPackageManager()).toString();

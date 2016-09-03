@@ -96,7 +96,7 @@ public class AppAdapter extends BaseAdapter {
 			// TODO Auto-generated method stub
 			AppInfo item = (AppInfo) getItem(position);
 			try {
-				
+				//这是个获取剪切板服务
 				ClipboardManager cmb = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);  
 				cmb.setPrimaryClip(ClipData.newPlainText(null, AppInfoReader.readSignature(mContext, item.packageName)));  
 			} catch (NameNotFoundException e) {
